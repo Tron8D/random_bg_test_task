@@ -9,10 +9,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:random_bg_test_task/random_background_color_app.dart';
 
+
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(RandomBackgroundColorApp());
+    await tester.pumpWidget(const RandomBackgroundColorApp());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
