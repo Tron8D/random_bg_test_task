@@ -8,7 +8,7 @@
 PRODUCT_NAME = random_bg_test_task
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = randombgtesttask.randomBgTestTask
+PRODUCT_BUNDLE_IDENTIFIER = dmytro.m.tymoshenko.at.gmail.com.randomBgTestTask
 
 // The copyright displayed in application information
 PRODUCT_COPYRIGHT = Copyright © 2022 .random_bg_test_task. All rights reserved.
