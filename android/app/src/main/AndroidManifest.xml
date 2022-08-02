@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="random_bg_test_task.random_bg_test_task">
+    package="dmytro.m.tymoshenko.at.gmail.com.random_bg_test_task">
    <application
         android:label="random_bg_test_task"
         android:name="${applicationName}"
