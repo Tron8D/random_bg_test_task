@@ -1,3 +1,11 @@
+Screen display the text "Hey there" in the middle of the screen and
+after tapping anywhere on the screen, a background color change to a
+randomly generated color.
+
+Tap - random background color
+Drag up\down - change hue range
+Long press - change color channel
+
 # flutter_project_template
 📖 Template for flutter projects using solid_lints, CI for tests and analysis.
 

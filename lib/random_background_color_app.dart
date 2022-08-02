@@ -8,7 +8,8 @@ class RandomBackgroundColorApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
+      title: 'Random Background Color App',
       debugShowCheckedModeBanner: false,
       home: HomeScreen(),
     );
