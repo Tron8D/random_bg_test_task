@@ -37,7 +37,7 @@ class CustomColorChanger {
     int _updatedHueValue;
     Color _colorWithNewHue;
 
-    if(currentColor == null) return Colors.white;
+    if (currentColor == null) return Colors.white;
 
     switch (colorToChange) {
       case SelectedColor.red:

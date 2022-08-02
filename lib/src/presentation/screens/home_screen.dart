@@ -34,11 +34,11 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
-  void _onTap(){
+  void _onTap() {
     _setBackgroundColor(CustomColorChanger.getRandomColor());
   }
 
-  void _onLongPress(){
+  void _onLongPress() {
     setState(() {
       _hueIndex ??= 0;
       _hueIndex = (_hueIndex! + 1) % _hueList.length;
@@ -49,13 +49,14 @@ class _HomeScreenState extends State<HomeScreen> {
           duration: const Duration(milliseconds: 600),
           content: Text(
             'Change ${_hueList[_hueIndex ?? 0].name} range.',
-            textAlign: TextAlign.center,),
+            textAlign: TextAlign.center,
+          ),
         ),
       );
     });
   }
 
-  void _onPanUpdate(DragUpdateDetails details){
+  void _onPanUpdate(DragUpdateDetails details) {
     setState(() {
       _backgroundColor = CustomColorChanger.changeHue(
         _backgroundColor,
@@ -65,10 +66,10 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
-  void _onPanEnd(DragEndDetails _){
+  void _onPanEnd(DragEndDetails _) {
     final _hueRangeName = _hueList[_hueIndex ?? 0].name;
     String? _hueCurrentValue;
-    switch(_hueList[_hueIndex ?? 0]){
+    switch (_hueList[_hueIndex ?? 0]) {
       case SelectedColor.red:
         _hueCurrentValue = _backgroundColor?.red.toString();
         break;
@@ -95,7 +96,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    key: const Key('scaffold'),
+      key: const Key('scaffold'),
       backgroundColor: _backgroundColor,
       body: Stack(
         alignment: Alignment.centerRight,
